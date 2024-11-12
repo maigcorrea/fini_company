@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --titulos:"Montserrat";
+}
+
+body{
+    font-size: 16px;
+}
+
+h1,h2,h3{
+    font-family: var(--titulos);
+}
+
+        /* MENU */
+header{
+    position: fixed;
+    width: 100%;
+    font-family:var(--titulos);
+    background-color: transparent;
+}
+
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav div{
+    display: flex;
+}
+
+nav>div img{
+    width: 100px;
+    height: 60px;
+}
+
+nav div:nth-child(2){
+    width: 40%;
+}
+
+nav div:nth-child(2) ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+}
+
+nav div:nth-child(3){
+    gap: 20px;
+    align-items: center;
+}
+
+nav div:nth-child(3) input{
+    height: 25px;
+}
+
+nav div:nth-child(3) img{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* BANNER */
+#banner div{
+    height: 80vh;
+    background-image: url(./img/portada.png);
+    background-size:cover;
+}
+
+    /* PRODUCTOS ESTRELLA */
+
+#best-sellers>div{
+    width: 80%;
+    margin: auto;
+}
+
+
+#best-sellers div:nth-child(2){
+    display: flex;
+}
+
+#best-sellers div img{
+    width: 300px;
+    height: 400px;
+}
+
+#best-sellers div p{
+    font-family: var(--titulos);
+    font-weight: bold;
+}
