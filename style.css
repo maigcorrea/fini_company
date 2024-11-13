@@ -74,29 +74,84 @@ nav div:nth-child(3) img{
 
 /* BANNER */
 #banner div{
-    height: 80vh;
+    height: 100vh;
     background-image: url(./img/portada.png);
     background-size:cover;
 }
 
     /* PRODUCTOS ESTRELLA */
 
+#best-sellers{
+    padding-bottom: 40px;
+}
+
 #best-sellers>div{
     width: 80%;
+    padding-top: 40px;
     margin: auto;
 }
 
 
-#best-sellers div:nth-child(2){
+#best-sellers>div>div{
     display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+
 }
 
 #best-sellers div img{
-    width: 300px;
-    height: 400px;
+    width: 200px;
+    height: 200px;
 }
 
 #best-sellers div p{
     font-family: var(--titulos);
     font-weight: bold;
+}
+
+#best-sellers>div>div div{
+    padding:35px;
+    border-radius: 10px;
+    line-height: 35px;
+}
+
+#best-sellers>div>div div:nth-child(1){
+    background-color: #FF9372;
+}
+
+#best-sellers>div>div div:nth-child(2){
+    background-color: #00D695;
+}
+
+#best-sellers>div>div div:nth-child(3){
+    background-color: #FF93F1;
+}
+
+#best-sellers>div>div div:nth-child(4){
+    background-color: #FFD900;
+}
+
+
+#best-sellers>div>div div:nth-child(1):hover{
+    box-shadow: 0px 0px 20px 0px #ff937276,
+    0 0px 20px #ff937276, /* Resplandor cercano */
+    0 0px 25px 1px #ff937276; /* Color secundario del resplandor */
+}
+
+#best-sellers>div>div div:nth-child(2):hover{
+    box-shadow: 0px 0px 10px 0px #00d69684,
+    0 0px 20px #00d69684, /* Resplandor cercano */
+    0 0px 25px 1px #00d69684; /* Color secundario del resplandor */
+}
+
+#best-sellers>div>div div:nth-child(3):hover{
+    box-shadow: 0px 0px 10px 0px #ff93f18d,
+    0 0px 20px #ff93f18d, /* Resplandor cercano */
+    0 0px 25px 1px #ff93f18d; /* Color secundario del resplandor */
+}
+
+#best-sellers>div>div div:nth-child(4):hover{
+    box-shadow: 0px 0px 10px 0px #ffd9007f,
+    0 0px 20px #ffd9007f, /* Resplandor cercano */
+    0 0px 25px 1px #ffd9007f; /* Color secundario del resplandor */
 }
