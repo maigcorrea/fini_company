@@ -175,6 +175,8 @@ nav div:nth-child(3) img{
     margin: auto;
     padding: 25px;
     background-color: #D6DFFA;
+    box-shadow: 10px 5px 11px rgb(78, 78, 78),
+    -0px -1px 10px #D6DFFA;
     border-radius: 20px;
 }
 
@@ -219,3 +221,20 @@ nav div:nth-child(3) img{
     box-shadow: 7px 0px 11px #9747FF,
      -0px -1px 10px #9747FF;
 }
+
+
+/* VENTAS */
+
+#sell-number div{
+    display: flex;
+    background-color:#FFF4F4;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    font-family: var(--titulos);
+    font-weight:300;
+}
+
+
