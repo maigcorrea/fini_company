@@ -402,5 +402,96 @@ nav div:nth-child(3) img{
     font-size: 1.3rem;
 }
 
+/* TERCERA PÁGINA - COMPROMISO SOCIAL Y MEDIOAMBIENTAL */
+
+#commitment-banner div{
+    height: 100vh;
+    background-image: url(./img/commitment-banner.png);
+    background-size: cover;
+}
 
 
+/* PRIORIDADES */
+#brand-goals div:nth-child(1){
+    display: flex;
+    padding: 5% 0px;
+    margin: auto;
+    width: 80%;
+    justify-content: space-between;
+}
+
+#brand-goals div:nth-child(1) h2{
+    font-size: 5rem;
+}
+
+#brand-goals div:nth-child(1) p{
+    width: 50%;
+    font-size: 1.3rem;
+    padding-top: 15px;
+}
+
+#brand-goals div:nth-child(2) img{
+    width: 250px;
+    height: auto;
+    border-radius: 20px;
+}
+
+#brand-goals div:nth-child(2){
+    padding-bottom:2%;
+}
+
+#brand-goals div:nth-child(2) div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+#brand-goals div:nth-child(2) div:nth-child(1) img:nth-child(even){
+    border: solid 1px black;
+}
+
+#brand-goals div:nth-child(2) div:nth-child(2) img:nth-child(odd){
+    border: solid 1px black;
+}
+
+
+/* I+D */
+#I_D div{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#I_D div:nth-child(2){
+    align-items: baseline;
+    padding-bottom: 5%;
+    /* justify-content: space-between;
+    padding: 0 50px; */
+}
+
+#I_D div:nth-child(1) h2{
+    font-size: 5rem;
+    width: 50%;
+}
+
+#I_D div:nth-child(1) img{
+    width: 40%;
+}
+
+#I_D div:nth-child(2) h2{
+    font-size: 5rem;
+    width: 47%;
+}
+
+#I_D div:nth-child(2) p{
+    width: 40%;
+    font-size: 1.3rem;
+}
+
+
+/* ACCIONES SOCIALES */
