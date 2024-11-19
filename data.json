@@ -1,0 +1,35 @@
+{
+    "productos":[
+        {
+            "id": 1,
+            "nombre":"ChocoGang Marshmallow",
+            "gramos":"35g"
+        },
+        {
+            "id": 2,
+            "nombre":"ChocoGang Tubes",
+            "gramos":"40g"
+        },
+        {
+            "id": 3,
+            "nombre":"Party Mix",
+            "gramos":"90g"
+        },
+        {
+            "id": 4,
+            "nombre":"Jelly Berries Moras",
+            "gramos":"90g"
+        },
+        {
+            "id": 5,
+            "nombre":"The Mellows Sweet PopCorn",
+            "gramos":"80g"
+        },
+        {
+            "id": 6,
+            "nombre":"The Mellows Magic",
+            "gramos":"80g"
+        }
+    ]
+        
+}
