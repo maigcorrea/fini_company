@@ -776,10 +776,18 @@ footer .rights p{
 
 /* CUARTA PÁGINA - PRODUCTOS */
 #banner-prod{
-    height: 30vh;
-}
-#banner-prod h1{
+    height: 60vh;
     display: flex;
-    margin: auto;
-    font-size: 4rem;
+    align-items: center;
+}
+
+#banner-prod div{
+    width: 100%;
+    border-bottom: solid 5px black;
+    margin: 0 70px;
+}
+
+#banner-prod h1{
+    font-size: 7rem;
+    padding-bottom: 30px;
 }
