@@ -10,6 +10,14 @@
 :root{
     --titulos:"Montserrat";
     --parrafos:"Roboto";
+    --orange:#FF9372;
+    --green:#00D695;
+    --pink:#FF93F1;
+    --yellow:#FFD900;
+    --orangeShadow:#ff937276;
+    --darkPink:#A9369A;
+    --darkGreen:#679B4E;
+
 }
 
 body{
@@ -495,3 +503,200 @@ nav div:nth-child(3) img{
 
 
 /* ACCIONES SOCIALES */
+
+#social-projects h2{
+    text-align: center;
+    font-size: 3rem;
+    padding:10px 0;
+    width: 100%;
+    background-color: var(--pink);
+}
+
+#social-projects .p1, .p2{
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+#social-projects .img-p img{
+    width: 800px;
+    border:solid 1px black;
+}
+
+#social-projects .tp{
+    width: 40%;
+    padding-right: 50px;
+}
+
+#social-projects .p1>div{
+    padding-left: 40px;
+}
+
+#social-projects .tp p{
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#social-projects .tp h3{
+    font-size:1.7rem;
+}
+
+#social-projects .mas img{
+    width: 20px;
+    height: auto;
+}
+
+#social-projects .mas a{
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    gap: 10px;
+    padding: 15px 25px;
+    border: solid 1px black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-family: var(--titulos);
+}
+
+#social-projects .mas a:hover{
+    box-shadow: 7px 0px 11px var(--pink),
+     -0px -1px 11px var(--pink),
+     -7px 0px 11px var(--pink);
+}
+
+#social-projects>div:last-child{
+    margin: auto;
+    width: 20%;
+}
+
+#social-projects>div:last-child img{
+    width: 20px;
+    height: auto;
+}
+
+#social-projects>div:last-child a{
+    display:inline-flex;
+    gap:10px;
+    font-family: var(--titulos);
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    background-color: rgb(173, 173, 173);
+}
+
+#social-projects>div:last-child a:hover{
+    background-color:var(--darkPink);
+}
+
+/* ACCIONES MEDIOAMBIENTALES */
+#environment-projects{
+    padding: 5% 0;
+}
+#environment-projects h2{
+    text-align: center;
+    font-size: 3rem;
+    padding:10px 0;
+    width: 100%;
+    background-color: var(--green);
+}
+
+#environment-projects .p1, .p2{
+    display: flex;
+    padding: 40px 0;
+    justify-content: space-between;
+}
+
+#environment-projects .p1 div:nth-child(2) img{
+    width: 800px;
+    height: auto;
+    border:solid 1px black;
+}
+
+#environment-projects .p2 div:nth-child(1) img{
+    width: 800px;
+    height: auto;
+    border:solid 1px black;
+}
+
+
+#environment-projects .tp{
+    width: 40%;
+    padding-right: 50px;
+}
+
+#environment-projects .p1>div{
+    padding-left: 40px;
+}
+
+#environment-projects .tp p{
+    font-size: 1.3rem;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+#environment-projects .tp h3{
+    font-size:1.7rem;
+}
+
+#environment-projects .mas img{
+    width: 20px;
+    height: auto;
+}
+
+#environment-projects .mas a{
+    text-decoration: none;
+    color: black;
+    display: inline-flex;
+    gap: 10px;
+    padding: 15px 25px;
+    border: solid 1px black;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-family: var(--titulos);
+}
+
+#environment-projects .mas a:hover{
+    box-shadow: 7px 0px 11px var(--green),
+     -0px -1px 11px var(--green),
+     -7px 0px 11px var(--green);
+}
+
+
+#environment-projects>div:last-child{
+    margin: auto;
+    width: 20%;
+}
+
+#environment-projects>div:last-child img{
+    width: 20px;
+    height: auto;
+}
+
+#environment-projects>div:last-child a{
+    display:inline-flex;
+    gap:10px;
+    font-family: var(--titulos);
+    font-size: 1.3rem;
+    padding: 15px 25px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    background-color: rgb(173, 173, 173);
+}
+
+#environment-projects>div:last-child a:hover{
+    background-color: var(--darkGreen);
+}
+
+/* SABER MÁS */
+#know div{
+    width: 100%;
+    margin: auto;
+}
+
+#know video{
+    max-width:50%;
+}
