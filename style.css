@@ -772,3 +772,14 @@ footer .rights p{
 .footer-container div:nth-child(3) a:hover{
     background-color: whitesmoke;
 }
+
+
+/* CUARTA PÁGINA - PRODUCTOS */
+#banner-prod{
+    height: 30vh;
+}
+#banner-prod h1{
+    display: flex;
+    margin: auto;
+    font-size: 4rem;
+}
