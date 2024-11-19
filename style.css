@@ -14,6 +14,7 @@
     --green:#00D695;
     --pink:#FF93F1;
     --yellow:#FFD900;
+    --azul:#1E50E6;
     --orangeShadow:#ff937276;
     --darkPink:#A9369A;
     --darkGreen:#679B4E;
@@ -705,4 +706,69 @@ nav div:nth-child(3) img{
 #know video{
     max-width:100%;
     margin: auto;
+}
+
+
+/* FOOTER */
+footer{
+    background-color: var(--azul);
+    color: whitesmoke;
+}
+
+footer .footer-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    list-style: none;
+}
+
+footer li{
+    line-height: 60px;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: var(--titulos);
+}
+
+footer .rights{
+    width: 80%;
+    margin: auto;
+}
+
+footer .rights p{
+    font-family: var(--titulos);
+    padding: 15px 0;
+}
+
+.footer-container div:nth-child(3){
+    padding-top: 3%;
+    width: 30%;
+}
+
+.footer-container div:nth-child(3) input[type="email"]{
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-family: var(--parrafos);
+}
+
+.footer-container div:nth-child(3) a{
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: rgb(156, 156, 156);
+    border-radius: 10px;
+    color: black;
+}
+
+.footer-container div:nth-child(3) a:hover{
+    background-color: whitesmoke;
 }
