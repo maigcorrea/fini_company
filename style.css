@@ -15,6 +15,7 @@
     --pink:#FF93F1;
     --yellow:#FFD900;
     --azul:#1E50E6;
+    --violetaClaro:#D6DFFA;
     --orangeShadow:#ff937276;
     --darkPink:#A9369A;
     --darkGreen:#679B4E;
@@ -811,7 +812,7 @@ footer .rights p{
     font-size: 1.2rem;
 }
 
-#join-us h3, p{
+#join-us h3, #join-us p{
     width: 50%;
     padding-left: 5%;
 }
@@ -832,4 +833,43 @@ footer .rights p{
 #join-us a:hover{
     background-color: black;
     color: whitesmoke;
+}
+
+/* PROMOCIONES */
+
+#promo>div{
+    background-color: var(--violetaClaro);
+    border-radius:350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 3%;
+    margin: 50px 0;
+}
+
+#promo>div div:nth-child(1){
+    width: 60%;
+}
+
+#promo>div div:nth-child(2){
+    width: 30%;
+}
+
+#promo img{
+    width: 300px;
+    height: auto;
+}
+
+#promo>div div:nth-child(1) h3{
+    font-size: 3rem;
+    padding-bottom: 30px;
+}
+
+#promo>div div:nth-child(1) p{
+    font-size: 1.3rem;
+}
+
+#promo>div div:nth-child(1) h3, #promo>div div:nth-child(1) p{
+    margin-left: 90px;
 }
