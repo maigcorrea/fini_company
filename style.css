@@ -791,3 +791,45 @@ footer .rights p{
     font-size: 7rem;
     padding-bottom: 30px;
 }
+
+/* PRODUCTOS EN JS */
+
+/* BANNER JOIN US */
+#join-us{
+    height: 60vh;
+    background-image: url(./img/rana_opacidad.png);
+    background-size: cover;
+    background-position: center ;
+}
+
+#join-us h3{
+    font-size: 3rem;;
+    padding:3% ;
+}
+
+#join-us p{
+    font-size: 1.2rem;
+}
+
+#join-us h3, p{
+    width: 50%;
+    padding-left: 5%;
+}
+
+#join-us a{
+    display:inline-flex;
+    padding: 20px 400px;
+    background-color: whitesmoke;
+    color: black;
+    text-decoration: none;
+    font-size: 1.7rem;
+    font-family: var(--titulos);
+    font-weight: bold;
+    border-radius: 15px;
+    margin:5%;
+}
+
+#join-us a:hover{
+    background-color: black;
+    color: whitesmoke;
+}
