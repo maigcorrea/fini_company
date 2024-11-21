@@ -357,13 +357,19 @@ nav div:nth-child(3) img{
     text-align: center;
 }
 
+.slider-container {
+    overflow: hidden;
+    position: relative; /* Para controlar la posición de los elementos internos */
+    width: 100%; /* Asegúrate de que abarque todo el ancho */
+}
+
 .team-container{
     display: flex;
-    width:300%;
+    width:100%;
 }
 
 .person1, .person2, .person3{
-    width: 100%;
+    flex: 0 0 100%;
     height: 60vh;
     display: flex;
     /* justify-content: center; */
@@ -386,18 +392,6 @@ nav div:nth-child(3) img{
 .slider-container .person3 .p-info{
     width: 80%;
 } */
-
-.person1{
-    background-color: #679B4E;
-}
-
-.person2{
-    background-color: red;
-}
-
-.person3{
-    background-color: #ff937276;
-}
 
 .team-container img{
     border-radius: 50%;
