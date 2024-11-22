@@ -51,6 +51,7 @@ nav{
 
 nav div{
     display: flex;
+    width: 20%;
 }
 
 nav>div img{
@@ -100,7 +101,8 @@ nav input[type="search"]{
 #banner div{
     height: 100vh;
     background-image: url(./img/portada.png);
-    background-size:cover;
+    background-size:contain;
+    background-repeat: no-repeat;
 }
 
     /* PRODUCTOS ESTRELLA */
@@ -518,6 +520,7 @@ nav input[type="search"]{
 #projects-preview{
     margin: 5% 0;
 }
+
 #projects-preview h2{
     text-align: center;
     font-size: 3.5rem;
@@ -1040,3 +1043,135 @@ footer .rights p{
 #promo>div div:nth-child(1) h3, #promo>div div:nth-child(1) p{
     margin-left: 90px;
 }
+
+
+/* RESPONSIVE */
+@media screen and (max-width:992px){
+    body{
+        background-color: red;
+    }
+
+    /* PAGINA INICIAL */
+
+    /* Barra navegación */
+    nav div {
+        display: flex;
+        /* width: 9%; */
+        font-size: 0.9rem;
+    }
+
+    nav>div img{
+        width: 60px;
+        height: 40px;
+    }
+
+    nav div:nth-child(1){
+        width: fit-content;
+    }
+
+    nav div:nth-child(2) {
+        width: 50%;
+    }
+
+    nav div:nth-child(3){
+        width: fit-content;
+    }
+
+    nav input[type="search"] {
+        padding: 15px 0px;
+    }
+
+    /* Banner */
+    /* #banner{
+        height: 51vh;
+    } */
+
+    /* Productos estrella */
+
+    #best-sellers>div>div{
+        gap: 40px;
+        justify-content: center;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width:768px) {
+    body{
+        background-color: green;
+    }
+    /* PAGINA INICIAL */
+
+    /* Barra navegación */
+    nav div {
+        display: flex;
+        /* width: 9%; */
+        font-size: 0.9rem;
+    }
+
+    nav>div img{
+        width: 60px;
+        height: 40px;
+    }
+
+    nav div:nth-child(1){
+        width: fit-content;
+    }
+
+    nav div:nth-child(2) {
+        width: 50%;
+    }
+
+    nav div:nth-child(3){
+        width: fit-content;
+    }
+
+    nav input[type="search"] {
+        padding: 15px 0px;
+    }
+
+    /* Banner */
+    #banner{
+        height: 38vh;
+    }
+
+    /* Productos estrella */
+
+    #best-sellers>div>div{
+        gap: 40px;
+    }
+
+    /* Productos que sorprenden de manera infinita */
+    #moreFini>div{
+        flex-wrap: wrap;
+    }
+
+    #moreFini>div div:nth-child(1){
+        width: 100%;
+    }
+
+    #moreFini>div div:nth-child(1) h3{
+        font-size: 1.4rem;
+    }
+
+    #moreFini>div div:nth-child(1) p{
+        font-size: 1rem;
+        margin-bottom: 100px;
+    }
+
+    #moreFini>div>div>div{
+        width: 100%;
+    }
+
+    #moreFini img{
+       display: none;
+    }
+}
+
+
