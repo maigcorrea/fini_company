@@ -98,11 +98,16 @@ nav input[type="search"]{
 
 
 /* BANNER */
+
+#banner{
+    width: 100%;
+}
 #banner div{
-    height: 100vh;
-    background-image: url(./img/portada.png);
-    background-size:contain;
-    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#banner div img{
+    max-width: 100%;
 }
 
     /* PRODUCTOS ESTRELLA */
@@ -217,7 +222,7 @@ nav input[type="search"]{
 #moreFini>div>div>div{
     display: flex;
     width: 50%;
-    justify-content: space-between;
+    gap: 40px;
 }
 
 #moreFini>div>div>div a{
@@ -1046,6 +1051,97 @@ footer .rights p{
 
 
 /* RESPONSIVE */
+@media screen and (max-width:1400px){
+    body{
+        background-color: yellow;
+    }
+    /* PAGINA INICIAL */
+
+    /* Barra navegación */
+    nav div {
+        display: flex;
+        font-size: 1.1rem;
+    }
+
+    nav>div img{
+        width: 80px;
+        height: 50px;
+    }
+
+    nav div:nth-child(1){
+        width: fit-content;
+    }
+
+    nav div:nth-child(2) {
+        width: 50%;
+    }
+
+    nav div:nth-child(3){
+        width: 33%;
+    }
+
+    nav input[type="search"] {
+        padding: 15px 10px;
+        height: 25px;
+        width: 60%;
+        font-size: 1rem;
+    }
+
+    /* nav div:nth-child(3) {
+        gap: 20px;
+        align-items: center;
+        width: 25%;
+    } */
+
+    /* Productos estrella */
+    /* #best-sellers>div>div{
+        gap: 40px;
+        justify-content: center;
+    } */
+
+
+
+    /* Productos estrella */
+    #best-sellers>div>div{
+        gap: 40px;
+        justify-content: center;
+    }
+
+    #best-sellers>div>div div {
+        padding: 71px;
+        border-radius: 10px;
+        line-height: 35px;
+    }
+
+    /* Productos que sorprenden de manera infinita */
+    #moreFini>div div:nth-child(1) h3{
+        font-size: 1.4rem;
+    }
+
+    #moreFini>div div:nth-child(1) p{
+        font-size: 1rem;
+        margin-bottom: 200px;
+    }
+    
+    #moreFini>div div:nth-child(2)>img{
+        max-width: 100%;
+    } 
+
+    #moreFini>div>div>div{
+        width: 100%;
+        
+    }
+
+    #moreFini>div>div>div a {
+        font-size: 1.2rem;
+        padding: 20px 25px;
+    }
+
+
+    
+
+}
+
 @media screen and (max-width:992px){
     body{
         background-color: red;
@@ -1061,8 +1157,8 @@ footer .rights p{
     }
 
     nav>div img{
-        width: 60px;
-        height: 40px;
+        width: 80px;
+        height: 50px;
     }
 
     nav div:nth-child(1){
@@ -1081,16 +1177,47 @@ footer .rights p{
         padding: 15px 0px;
     }
 
-    /* Banner */
-    /* #banner{
-        height: 51vh;
-    } */
-
     /* Productos estrella */
-
     #best-sellers>div>div{
         gap: 40px;
         justify-content: center;
+    }
+
+    /* Productos que sorprenden de manera infinita */
+    #moreFini>div {
+        width: 90%;
+    }
+
+    #moreFini>div div:nth-child(1){
+        width: 100%;
+    }
+
+    #moreFini>div div:nth-child(1) h3{
+        font-size: 1.4rem;
+    }
+
+    #moreFini>div div:nth-child(1) p{
+        font-size: 1rem;
+        margin-bottom: 100px;
+    }
+
+    #moreFini>div>div>div{
+        width: 100%;
+    }
+
+    #moreFini>div>div>div a {
+        font-size: 1.2rem;
+        padding: 20px 12px;
+    }
+
+    #moreFini>div div:nth-child(2){
+        width: 100%;
+        height: 45vh;
+    }
+
+    #moreFini>div div:nth-child(2)>img{
+        max-width: 100%;
+        min-height: 100%;
     }
 
 
@@ -1136,10 +1263,6 @@ footer .rights p{
         padding: 15px 0px;
     }
 
-    /* Banner */
-    #banner{
-        height: 38vh;
-    }
 
     /* Productos estrella */
 
@@ -1165,8 +1288,19 @@ footer .rights p{
         margin-bottom: 100px;
     }
 
+    #moreFini>div div:nth-child(2){
+        display: none;
+    }
+
     #moreFini>div>div>div{
         width: 100%;
+        margin: auto;
+        padding-bottom: 30px;
+    }
+
+    #moreFini>div>div>div a {
+        font-size: 1.5rem;
+        padding: 20px 29px;
     }
 
     #moreFini img{
