@@ -89,6 +89,8 @@ leftBtn.addEventListener("click",()=>{
 updateCarousel();
 
 
+
+
 //ACORDEÓN FAQS
 const blocks=document.querySelectorAll(".block");
 const acTitles=document.querySelectorAll(".ac-title");

@@ -88,6 +88,13 @@ nav div:nth-child(3) img{
     width: 20px;
 }
 
+nav input[type="search"]{
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+}
+
 
 /* BANNER */
 #banner div{
