@@ -14,7 +14,8 @@
     --green:#00D695;
     --pink:#FF93F1;
     --yellow:#FFD900;
-    --azul:#1E50E6;
+    --blue:#1E50E6;
+    --darkBlue:#08038D;
     --violetaClaro:#D6DFFA;
     --orangeShadow:#ff937276;
     --darkPink:#A9369A;
@@ -352,28 +353,59 @@ nav div:nth-child(3) img{
 }
 
 /* FAQS */
+#faqs{
+    background:linear-gradient(var(--darkBlue) 90%,whitesmoke) 100%;
+    padding: 5%;
+}
+#faqs>div{
+    display: flex;
+    width: 70%;
+    height: 60vh;
+    gap: 30px;
+    margin: auto;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* #faqs div:nth-child(1){
+    width: 70%;
+} */
+
+#faqs .img-history img{
+    height: 500px;
+    width: 400px;
+    box-shadow: 7px 0px 20px rgba(84, 84, 84, 0.5),
+     5px -1px 20px rgba(84, 84, 84, 0.5);
+}
+
 .accordion{
-    background-color: red;
-    padding: 2em;
-    width: 90%;
+    background-color: gray;
+    width: 70%;
     max-width: 100%;
+    height: fit-content;
 }
 
 .accordion .block{
-    background-color: blue;
-    margin:0 0 1em;
-    padding:1em;
+    background-color: whitesmoke;
+    padding:5px;
 }
 
 .accordion .ac-title{
-    background-color: green;
-    margin: 0 0 1em;
+    background-color: var(--violetaClaro);
+    margin: 0 0 10px;
     padding: 1em;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-family: var(--titulos);
+    font-weight: 450;
+    cursor: pointer;
 }
 
 .accordion .ac-content{
     /*Inicialmente el contenido está escondido*/
-    background-color: pink;
+    background-color: var(--violetaClaro);
     padding: 0;
     height: 0;
     overflow: hidden;
@@ -382,11 +414,13 @@ nav div:nth-child(3) img{
 
 .accordion .block.active .ac-content{
     /*Cuando el bloque tenga la clase active el contenido será visible*/
-    height: 4em;
+    height: 7em;
+    padding: 10px;
 }
 
 /* PERSONAS */
 #team-members h2{
+    margin-top: 30px;
     font-size: 3rem;
     text-align: center;
 }
@@ -838,7 +872,7 @@ nav div:nth-child(3) img{
 
 /* FOOTER */
 footer{
-    background-color: var(--azul);
+    background-color: var(--blue);
     color: whitesmoke;
 }
 
