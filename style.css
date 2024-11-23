@@ -47,11 +47,11 @@ nav{
     display:flex;
     justify-content: space-around;
     align-items: center;
+    font-size: 1.2rem;
 }
 
 nav div{
     display: flex;
-    width: 20%;
 }
 
 nav>div img{
@@ -78,6 +78,7 @@ nav a{
 nav div:nth-child(3){
     gap: 20px;
     align-items: center;
+    width: fit-content;
 }
 
 nav div:nth-child(3) input{
