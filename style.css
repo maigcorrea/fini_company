@@ -319,10 +319,16 @@ nav input[type="search"]{
 /* PÁGINA 2 - CONOCENOS */
 
 /* BANNER */
+#about-banner{
+    width: 100%;
+}
+
 #about-banner div{
-    height: 100vh;
-    background-image: url(./img/about_banner.png);
-    background-size:cover;
+    width: 100%;
+}
+
+#about-banner div img{
+    max-width: 100%;
 }
 
 /* AÑOS AL FRENTE */
@@ -362,10 +368,14 @@ nav input[type="search"]{
 }
 
 #brand-journey div{
-    height: 100vh;
-    background-image: url(./img/linea_temporal_historia.png);
-    background-size: cover;
+    width: 100%;
+    text-align: center;
 }
+
+#brand-journey div img{
+    max-width: 100%;
+}
+
 
 /* FAQS */
 #faqs{
@@ -384,10 +394,6 @@ nav input[type="search"]{
     border-radius: 20px;
 }
 
-/* #faqs div:nth-child(1){
-    width: 70%;
-} */
-
 #faqs .img-history img{
     height: 500px;
     width: 400px;
@@ -405,6 +411,7 @@ nav input[type="search"]{
 .accordion .block{
     background-color: whitesmoke;
     padding:5px;
+    padding-top: 0px;
 }
 
 .accordion .ac-title{
@@ -429,7 +436,7 @@ nav input[type="search"]{
 
 .accordion .block.active .ac-content{
     /*Cuando el bloque tenga la clase active el contenido será visible*/
-    height: 7em;
+    height: 12em;
     padding: 10px;
 }
 
@@ -1138,6 +1145,50 @@ footer .rights p{
         padding: 20px 25px;
     }
 
+    /* PÁGINA 2- CONOCENOS */
+    /* faqs */
+    #faqs>div{
+        display: block;
+        height: fit-content;
+    }
+
+    #faqs .img-history{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    #faqs .img-history img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .accordion{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .accordion .block.active .ac-content{
+        height: 10em;
+        font-size: 0.9em;
+    }
+
+    /* personas */
+
+    .p-info {
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .profile-data {
+        line-height: 60px;
+    }
+
+    .profile-data p:nth-child(2) {
+        font-size: 2.5rem;
+    }
+
+
+
 
     
 
@@ -1221,6 +1272,29 @@ footer .rights p{
         min-height: 100%;
     }
 
+    /* PAGINA 2 - CONOCENOS */
+    /* faqs */
+
+    .accordion .block.active .ac-content{
+        height: 14em;
+    }
+
+    /* Historia */
+    #brand-journey p {
+        font-size: 1.5rem;
+    }
+
+    /* personas */
+    .profile-data p:nth-child(1) {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+
+    .profile-data p:nth-child(2){
+        font-size: 2rem;
+        line-height: 50px;
+    }
+    
 
 }
 
