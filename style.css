@@ -11,11 +11,14 @@
     --titulos:"Montserrat";
     --parrafos:"Roboto";
     --orange:#FF9372;
+    --orangeRadial:#633d26;
     --green:#00D695;
     --pink:#FF93F1;
     --yellow:#FFD900;
     --blue:#1E50E6;
     --darkBlue:#08038D;
+    --lightBlue:#BFFFEC;
+    --lightBlueRadial:#73998D;
     --violetaClaro:#D6DFFA;
     --orangeShadow:#ff937276;
     --darkPink:#A9369A;
@@ -968,12 +971,12 @@ footer .rights p{
 
 /* CUARTA PÁGINA - PRODUCTOS */
 #banner-prod{
-    height: 60vh;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
-#banner-prod div{
+#banner-prod>div:nth-child(1){
     width: 100%;
     border-bottom: solid 5px black;
     margin: 0 70px;
@@ -985,6 +988,36 @@ footer .rights p{
 }
 
 /* PRODUCTOS EN JS */
+.prImage{
+    width: 80%;
+}
+
+.pr-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.product{
+    /* width: fit-content; */
+    width: 50%;
+}
+
+.imgContainer{
+    width: 100%;
+    text-align: center;
+}
+
+
+.pr-container .product:nth-child(1){
+    background:radial-gradient(var(--orangeRadial) 10%,orange);
+}
+
+.pr-container .product:nth-child(2){
+    background:radial-gradient(var(--lightBlueRadial) 30%,var(--lightBlue));
+}
 
 /* BANNER JOIN US */
 #join-us{

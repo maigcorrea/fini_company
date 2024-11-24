@@ -21,7 +21,7 @@
                 </ul>
             </div>
             <div>
-                <input type="search" name="buscador" placeholder="Buscar...>
+                <input type="search" name="buscador" placeholder="Buscar...">
                 <a href="#">Sign up</a>
                 <a href="#"><img src="./img/icons8-usuario-24.png" alt=""></a>
             </div>
@@ -31,6 +31,9 @@
         <section id="banner-prod">
             <div>
                 <h1>PRODUCTOS</h1>
+            </div>
+            <div class="pr-container">
+                <!-- Aqui van los productos insertados con JS -->
             </div>
         </section>
         <section id="join-us">
@@ -83,6 +86,32 @@
             <p>© 2024 Company, Inc. All rights reserved</p>
         </div>
         </footer>
+        <script src="./data.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded",()=>{
+                const seccion=document.querySelector("#banner-prod");
+                const divProductos=document.querySelector(".pr-container");
+                const [{nombre,gramos,image}]=productos;//Desetructurar datos
+
+                productos.forEach(producto => {
+                    const prod=document.createElement("div");
+                    prod.classList.add("product");
+
+                    prod.innerHTML=`
+                        <div class="imgContainer">
+                            <img src=${producto.image} class="prImage">
+                        </div>
+                        <h3 class="prName">${producto.nombre}</h3>
+                        <p class="prDesc">${producto.gramos}</p>
+                    `;
+
+                    divProductos.append(prod);
+                });
+                seccion.append(divProductos);
+
+
+            })
+        </script>
     </main>
 </body>
 </html>
