@@ -611,15 +611,22 @@ nav input[type="search"]{
 /* TERCERA PÁGINA - COMPROMISO SOCIAL Y MEDIOAMBIENTAL */
 
 #commitment-banner div{
-    height: 100vh;
-    background-image: url(./img/commitment-banner.png);
-    background-size: cover;
+    width: 100%;
+}
+
+#commitment-banner div{
+    width: 100%;
+}
+
+#commitment-banner div img{
+    max-width: 100%;
 }
 
 
 /* PRIORIDADES */
 #brand-goals div:nth-child(1){
     display: flex;
+    flex-wrap: wrap;
     padding: 5% 0px;
     margin: auto;
     width: 80%;
@@ -681,7 +688,7 @@ nav input[type="search"]{
 }
 
 #I_D div:nth-child(1) h2{
-    font-size: 5rem;
+    font-size: 3rem;
     width: 50%;
 }
 
@@ -690,13 +697,13 @@ nav input[type="search"]{
 }
 
 #I_D div:nth-child(2) h2{
-    font-size: 5rem;
+    font-size: 3rem;
     width: 47%;
 }
 
 #I_D div:nth-child(2) p{
     width: 40%;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 
