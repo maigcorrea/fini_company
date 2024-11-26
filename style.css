@@ -719,22 +719,28 @@ nav input[type="search"]{
 
 #social-projects .p1, .p2{
     display: flex;
+    flex-wrap: wrap;
     padding: 20px 0;
     justify-content: space-between;
 }
 
 #social-projects .img-p img{
-    width: 800px;
+    width: 100%;
     border:solid 1px black;
 }
 
 #social-projects .tp{
     width: 40%;
-    padding-right: 50px;
+    padding: 0 50px;
 }
 
 #social-projects .p1>div{
     padding-left: 40px;
+    width: 50%;
+}
+
+#social-projects .p2>div{
+    width: 50%;
 }
 
 #social-projects .tp p{
@@ -770,9 +776,10 @@ nav input[type="search"]{
      -7px 0px 11px var(--pink);
 }
 
-#social-projects>div:last-child{
+#social-projects>div:last-child, #environment-projects>div:last-child{
     margin: auto;
-    width: 20%;
+    width: 100%;
+    text-align: center;
 }
 
 #social-projects>div:last-child img{
@@ -808,20 +815,21 @@ nav input[type="search"]{
     background-color: var(--green);
 }
 
-#environment-projects .p1, .p2{
+#environment-projects .p1, #environment-projects .p2{
     display: flex;
-    padding: 40px 0;
+    flex-wrap: wrap;
+    padding: 20px 0;
     justify-content: space-between;
 }
 
 #environment-projects .p1 div:nth-child(2) img{
-    width: 800px;
-    height: auto;
+    width: 100%;
+    height: 100%;
     border:solid 1px black;
 }
 
 #environment-projects .p2 div:nth-child(1) img{
-    width: 800px;
+    width: 100%;
     height: auto;
     border:solid 1px black;
 }
@@ -829,11 +837,16 @@ nav input[type="search"]{
 
 #environment-projects .tp{
     width: 40%;
-    padding-right: 50px;
+    padding: 0 50px;
 }
 
 #environment-projects .p1>div{
     padding-left: 40px;
+    width: 50%;
+}
+
+#environment-projects .p2>div {
+    width: 50%;
 }
 
 #environment-projects .tp p{
@@ -867,12 +880,6 @@ nav input[type="search"]{
     box-shadow: 7px 0px 11px var(--green),
      -0px -1px 11px var(--green),
      -7px 0px 11px var(--green);
-}
-
-
-#environment-projects>div:last-child{
-    margin: auto;
-    width: 20%;
 }
 
 #environment-projects>div:last-child img{
@@ -1422,6 +1429,20 @@ footer .rights p{
 
     #I_D div {
         justify-content: space-between;
+    }
+
+    #social-projects .p1>div, #social-projects .p2>div, #environment-projects .p1>div, #environment-projects .p2>div{
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+    }
+
+    #social-projects .p1, #social-projects .p2, #environment-projects .p1, #environment-projects .p2{
+        gap:40px
+    }
+
+    #social-projects .p2, #environment-projects .p2{
+        flex-direction: column-reverse;
     }
 
 }
