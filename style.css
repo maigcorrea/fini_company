@@ -688,7 +688,7 @@ nav input[type="search"]{
 }
 
 #I_D div:nth-child(1) h2{
-    font-size: 3rem;
+    font-size: 5rem;
     width: 50%;
 }
 
@@ -697,13 +697,13 @@ nav input[type="search"]{
 }
 
 #I_D div:nth-child(2) h2{
-    font-size: 3rem;
+    font-size: 5rem;
     width: 47%;
 }
 
 #I_D div:nth-child(2) p{
     width: 40%;
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 
 
@@ -1257,7 +1257,19 @@ footer .rights p{
 
     /* Projects-preview */
     
+    /* TERCERA PÁGINA - COMPROMISO */
+    #I_D div:nth-child(1) h2{
+        font-size: 3rem;
+    }
 
+    #I_D div:nth-child(2) h2{
+        font-size: 3rem;
+    }
+    
+    #I_D div:nth-child(2) p{
+        font-size: 1rem;
+    }
+    
 
 
 
@@ -1391,6 +1403,26 @@ footer .rights p{
         padding: 0 40px;
     }
 
+
+
+    /* TERCERA PÁGINA - COMPROMISO */
+    #I_D div:nth-child(1) h2{
+        font-size: 2rem;
+    }
+
+    #I_D div:nth-child(2) h2{
+        font-size: 2rem;
+        width: 37%;
+    }
+    
+    #I_D div:nth-child(2) p{
+        font-size: 1rem;
+        width: 50%;
+    }
+
+    #I_D div {
+        justify-content: space-between;
+    }
 
 }
 
