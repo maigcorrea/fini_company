@@ -1077,7 +1077,9 @@ footer .rights p{
 
 #join-us a{
     display:inline-flex;
-    padding: 20px 400px;
+    padding: 30px;
+    width: 89%;
+    justify-content: center;
     background-color: whitesmoke;
     color: black;
     text-decoration: none;
@@ -1085,7 +1087,7 @@ footer .rights p{
     font-family: var(--titulos);
     font-weight: bold;
     border-radius: 15px;
-    margin:5%;
+    margin:5% 5% 0% 5%;
 }
 
 #join-us a:hover{
@@ -1129,7 +1131,7 @@ footer .rights p{
 }
 
 #promo>div div:nth-child(1) h3, #promo>div div:nth-child(1) p{
-    margin-left: 90px;
+    margin:0 90px;
 }
 
 
@@ -1277,8 +1279,48 @@ footer .rights p{
         font-size: 1rem;
     }
     
+    /* CUARTA PÁGINA - PRODUCTOS */
+    /* Join us */
+    #join-us a {
+        padding: 20px;
+        width: 70%;
+        margin: 5% 5% 0% 5%;
+    }
+
+    #join-us h3, #join-us p {
+        width: 70%;
+        padding-left: 5%;
+    }
+
+    #join-us p {
+        width: 55%;
+        padding-left: 5%;
+    }
+
+    /* promociones */
+    #promo>div {
+        flex-wrap: wrap;
+    }
+
+    #promo>div {
+        align-items: center;
+    }
+
+    #promo>div div:nth-child(2) {
+        width: 40%;
+    }
 
 
+    
+
+    #promo>div div:nth-child(1) h3{
+        font-size: 2rem;
+    }
+
+    #promo>div div:nth-child(1) p{
+        font-size: 1.2rem;
+        padding: 0;
+    }
 
     
 
@@ -1445,6 +1487,55 @@ footer .rights p{
         flex-direction: column-reverse;
     }
 
+    /* CUARTA PAGINA - PRODUCTOS */
+    #banner-prod h1 {
+        font-size: 5rem;
+    }
+
+    #join-us h3{
+        width: 75%;
+        font-size: 2.5rem;
+    }
+
+    #join-us p{
+        font-size: 1.3rem;
+    }
+
+    #join-us a {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    /* promociones */
+    #promo img {
+        width: 100%;
+    }
+
+    #promo>div div:nth-child(1) {
+        width: 90%;
+        padding-top: 50px;
+        padding-bottom: 40px;
+        margin: auto;
+    }
+
+    #promo>div div:nth-child(1) h3 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    #promo>div div:nth-child(1) p {
+        font-size: 1.1rem;
+        text-align: justify;
+        margin-right: 90px;
+    }
+
+    #promo>div div:nth-child(2) {
+        width: 40%;
+        margin:auto;
+        padding-bottom: 30px;
+    }
+    
+
 }
 
 
@@ -1534,6 +1625,36 @@ footer .rights p{
     /* PAGINA 2 - CONOCENOS */
     #brand-journey h2, #team-members h2, #projects-preview h2{
         font-size: 2.3rem;
+    }
+/* 
+    PAGINA 4 - PRODUCTOS */
+
+    #banner-prod h1 {
+        font-size: 4rem;
+    }
+
+    #join-us h3{
+        width: 75%;
+        font-size: 2.5rem;
+    }
+
+    #join-us p{
+        font-size: 1.1rem;
+        width: 50%;
+    }
+
+    #join-us a {
+        width: 90%;
+        padding: 10px 0;
+    }
+
+    /* promociones */
+    #promo>div div:nth-child(1) h3{
+        font-size: 2.5rem;
+    }
+
+    #promo>div div:nth-child(1) p{
+        font-size: 1rem;
     }
 }
 
