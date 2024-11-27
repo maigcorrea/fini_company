@@ -57,21 +57,21 @@
 
 //CAMBIAR EL BOTON DE COMPROMISO FINI POR "COMPROMISO"
 
-// Selecciona el primer enlace dentro del div con id "contenedor"
-// const btnPedido = document.querySelector(".btn-Comp");
+//Selecciona el primer enlace dentro del div con id "contenedor"
+const btnPedido = document.querySelector(".btn-Comp");
 
-// // Crea una función que verifica el ancho de la pantalla
-// function cambiarTextoPedido() {
-//   if (window.matchMedia("(max-width: 768px)").matches) {
-//     btnPedido.textContent = "Compromiso Fini";
-//   } else {
-//     btnPedido.textContent = "Compromiso";
-//   }
-// }
+// Crea una función que verifica el ancho de la pantalla
+function cambiarTextoPedido() {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+    btnPedido.textContent = "Compromiso Fini";
+  } else {
+    btnPedido.textContent = "Compromiso";
+  }
+}
 
-// // Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
-// window.addEventListener("load", cambiarTextoPedido);
-// window.addEventListener("resize", cambiarTextoPedido);
+// Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
+window.addEventListener("load", cambiarTextoPedido);
+window.addEventListener("resize", cambiarTextoPedido);
 
 
 
