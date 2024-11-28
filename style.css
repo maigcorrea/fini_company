@@ -80,6 +80,21 @@ nav a{
     color:black;
 }
 
+nav>div:nth-child(2) li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: width 0.5s ease;
+}
+
+nav>div:nth-child(2) li:hover::after {
+    width: fit-content; /* La línea se extiende en hover */
+}
+
 nav div:nth-child(3){
     gap: 20px;
     align-items: center;
