@@ -55,17 +55,25 @@
 
 
 
-//CAMBIAR EL BOTON DE COMPROMISO FINI POR "COMPROMISO" y 
+//CAMBIAR EL BOTON DE COMPROMISO FINI POR "COMPROMISO" Y TRABAJA CON NOSOTROS POR "TRABAJOS"
 
 //Selecciona el primer enlace dentro del div con id "contenedor"
-const btnPedido = document.querySelector(".btn-Comp");
+const btnPedido = document.querySelectorAll(".btn-Comp");
+const btnTrabajos=document.querySelector(".btn-trab");
 
 // Crea una función que verifica el ancho de la pantalla
 function cambiarTextoPedido() {
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    btnPedido.textContent = "Compromiso Fini";
+  if (window.matchMedia("(min-width: 767px)").matches) {
+    // btnPedido.textContent = "Compromiso Fini";
+    // btnTrabajos.textContent="Trabaja con nosotros";
+    btnPedido.forEach(e=>{
+      e.style.display="block";
+    })
   } else {
-    btnPedido.textContent = "Compromiso";
+    btnPedido.forEach(e=>{
+      e.style.display="none";
+    })
+    // btnTrabajos.textContent="Trabajos";
   }
 }
 

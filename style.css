@@ -1781,7 +1781,11 @@ form{
     }
 
     nav div:nth-child(2) {
-        width: 74%;
+        width: 51%;
+    }
+
+    nav div:nth-child(3) {
+        width: 32%;
     }
 
     
