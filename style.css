@@ -1155,6 +1155,46 @@ footer .rights p{
     max-width: 100%;
 }
 
+/* Puestos disponibles */
+#careers>div:nth-child(2){
+    width:80%;
+    margin: auto;
+    text-align: center;
+}
+
+.positions{
+    margin-top: 30px;
+}
+
+.position{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: auto;
+    gap:20px;
+    text-align: left;
+    align-items: center;
+    border-bottom: solid 1px black;
+    padding: 20px 0;
+}
+
+.position div:nth-child(1){
+    width: 30%;
+}
+
+.position div:nth-child(1) img{
+    width: 100%;
+}
+
+.position div:nth-child(2){
+    line-height: 30px;
+}
+
+.position div:nth-child(2) p:nth-child(1) , span{
+    font-weight: bold;
+}
+
+
 /* Formulario contacto */
 #contact{
     padding: 3% 0;
