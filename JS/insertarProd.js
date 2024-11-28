@@ -21,5 +21,26 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
     seccion.append(divProductos);
 
+    const prod=document.querySelectorAll(".product");
+    // const h3=document.querySelectorAll(".product h3");
+    console.log(h3);
+    const p=document.querySelectorAll(".product p");
+    prod.forEach(pr=>{
+        pr.addEventListener("mouseover",(e)=>{
+            const h3=document.querySelector(".product h3");
+            h3.forEach(h=>{
+                h.style.visibility="visible";
+
+            })
+        })
+
+        pr.addEventListener("mouseleave",()=>{
+            h3.forEach(h=>{
+                h.style.visibility="hidden";
+
+            })
+        })
+    })
+
 
 })

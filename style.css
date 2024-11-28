@@ -1060,6 +1060,11 @@ footer .rights p{
     background:radial-gradient(#395F99 30%,#5F9FFF);
 }
 
+/* .prName, .prDesc{
+    visibility: hidden;
+    
+} */
+
 /* BANNER JOIN US */
 #join-us{
     height: 60vh;
