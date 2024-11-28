@@ -55,7 +55,7 @@
 
 
 
-//CAMBIAR EL BOTON DE COMPROMISO FINI POR "COMPROMISO"
+//CAMBIAR EL BOTON DE COMPROMISO FINI POR "COMPROMISO" y 
 
 //Selecciona el primer enlace dentro del div con id "contenedor"
 const btnPedido = document.querySelector(".btn-Comp");
@@ -72,6 +72,9 @@ function cambiarTextoPedido() {
 // Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
 window.addEventListener("load", cambiarTextoPedido);
 window.addEventListener("resize", cambiarTextoPedido);
+
+//BUSCADOR PRINCIPAL
+const buscador=document.querySelector("nav div:nth-child(3) input");
 
 
 

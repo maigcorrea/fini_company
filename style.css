@@ -1152,7 +1152,7 @@ footer .rights p{
     /* Barra navegación */
     nav div {
         display: flex;
-        font-size: 1.1rem;
+        font-size: 0.9rem;
     }
 
     nav>div img{
@@ -1176,7 +1176,7 @@ footer .rights p{
         padding: 15px 10px;
         height: 25px;
         width: 60%;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     /* nav div:nth-child(3) {
@@ -1363,11 +1363,17 @@ footer .rights p{
     }
 
     nav div:nth-child(2) {
-        width: 50%;
+        width: 58%;
     }
 
     nav div:nth-child(3){
-        width: fit-content;
+        width: 25%;
+    }
+
+    nav div:nth-child(3) input{
+        height: 25px;
+        width: 40%;
+        padding: 15px 10px;
     }
 
     nav input[type="search"] {
@@ -1591,12 +1597,14 @@ footer .rights p{
     }
 
     nav div:nth-child(2) {
-        width: 50%;
+        width: 74%;
     }
 
-    nav div:nth-child(3){
+    
+
+    /* nav div:nth-child(3){
         width: fit-content;
-    }
+    } */
 
     nav input[type="search"] {
         padding: 15px 0px;
