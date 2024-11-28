@@ -644,23 +644,30 @@ nav input[type="search"]{
 }
 
 #brand-goals div:nth-child(2) img{
-    width: 250px;
+    width: 280px;
     height: auto;
     border-radius: 20px;
 }
 
 #brand-goals div:nth-child(2){
-    padding-bottom:2%;
-}
-
-#brand-goals div:nth-child(2) div{
+    /* padding-bottom:2%; */
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     margin: auto;
     justify-content: space-between;
     padding: 20px 0px;
+    gap: 20px;
 }
+
+/* #brand-goals div:nth-child(2) div{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 20px 0px;
+} */
 
 #brand-goals div:nth-child(2) div:nth-child(1) img:nth-child(even){
     border: solid 1px black;
@@ -1278,6 +1285,12 @@ footer .rights p{
     #I_D div:nth-child(2) p{
         font-size: 1rem;
     }
+
+    #brand-goals div:nth-child(2) img {
+        width: 17%;
+        height: auto;
+        border-radius: 20px;
+    }
     
     /* CUARTA PÁGINA - PRODUCTOS */
     /* Join us */
@@ -1487,6 +1500,17 @@ footer .rights p{
         flex-direction: column-reverse;
     }
 
+    #brand-goals div:nth-child(2) img {
+        width: 48%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    #know div {
+        margin: auto;
+        width: 75%;
+    }
+
     /* CUARTA PAGINA - PRODUCTOS */
     #banner-prod h1 {
         font-size: 5rem;
@@ -1625,6 +1649,23 @@ footer .rights p{
     /* PAGINA 2 - CONOCENOS */
     #brand-journey h2, #team-members h2, #projects-preview h2{
         font-size: 2.3rem;
+    }
+
+    /* PAGINA 3 COMPROMISO */
+    #brand-goals div:nth-child(1) h2 {
+        font-size: 3.5rem;
+    }
+
+    #brand-goals div:nth-child(1) p {
+        width: 100%;
+        font-size: 1rem;
+        padding-top: 15px;
+    }
+
+    #brand-goals div:nth-child(2) img {
+        width: 45%;
+        height: auto;
+        border-radius: 20px;
     }
 /* 
     PAGINA 4 - PRODUCTOS */
