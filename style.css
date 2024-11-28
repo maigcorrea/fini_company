@@ -1156,14 +1156,37 @@ footer .rights p{
 }
 
 /* Puestos disponibles */
+#careers>div:nth-child(1){
+    width: 50%;
+    margin: auto;
+}
+
+#careers>div:nth-child(1) h2{
+    margin-bottom: 20px;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+#careers>div:nth-child(1) p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+#careers input{
+    width: 30%;
+    padding: 10px;
+    outline-color: var(--blue);
+}
+
 #careers>div:nth-child(2){
     width:80%;
     margin: auto;
     text-align: center;
 }
 
-.positions{
-    margin-top: 30px;
+#careers>div:nth-child(2)>div:nth-child(1){
+    margin: 30px 0;
 }
 
 .position{
@@ -1171,7 +1194,7 @@ footer .rights p{
     flex-wrap: wrap;
     width: 50%;
     margin: auto;
-    gap:20px;
+    gap:40px;
     text-align: left;
     align-items: center;
     border-bottom: solid 1px black;
@@ -1190,22 +1213,27 @@ footer .rights p{
     line-height: 30px;
 }
 
-.position div:nth-child(2) p:nth-child(1) , span{
+.position div:nth-child(2) a:nth-child(1) , span{
     font-weight: bold;
+}
+
+.position div:nth-child(2) a:nth-child(1){
+    text-decoration: none;
+    color: black;
 }
 
 
 /* Formulario contacto */
 #contact{
     padding: 3% 0;
-    background-color: #3F7074;
+    background-color: var(--violetaClaro);
 }
 
 #contact h2 {
     margin-top: 5%;
     width: 80%;
     margin: auto;
-    border-bottom: solid whitesmoke 2px;
+    border-bottom: solid black 2px;
 }
 
 .form-container{
@@ -1221,8 +1249,12 @@ footer .rights p{
     width: 80%;
     align-items: baseline;
     padding: 3%;
-    background-color: #aed4d29d;
+    background-color: whitesmoke;
     border-radius: 20px;
+}
+
+.contact-container h3{
+    margin-bottom: 30px;
 }
 
 .contact-container>div{
@@ -1242,14 +1274,14 @@ form{
     border: none;
     padding: 10px;
     border-radius: 2px;
-    outline: none;
+    outline-color: var(--blue);
 }
 
 .form-container input[type="submit"]{
     width: 20%;
     margin: auto;
     border: none;
-    background-color: #FCA07F;
+    background-color: var(--violetaClaro);
     border-radius: 2px;
 }
 
@@ -1451,6 +1483,10 @@ form{
     /* QUINTA PÁGINA - TRABAJA CON NOSOTROS */
     .contact-container>div {
         width: 45%;
+    }
+
+    .position {
+        width: 85%;
     }
     
 
@@ -1684,6 +1720,17 @@ form{
 
 
     /* QUINTA PÁGINA - TRABAJA CON NOSOTROS */
+    /* Puestos de trabajo */
+    #careers>div:nth-child(1) h2{
+        font-size: 2.5rem;
+    }
+    
+    #careers>div:nth-child(1) p{
+        font-size: 1rem;
+    }
+
+
+    /* formulario contacto */
     .contact-container {
         display: flex;
         flex-direction: column;
@@ -1840,6 +1887,17 @@ form{
     }
 
     #promo>div div:nth-child(1) p{
+        font-size: 1rem;
+    }
+
+
+    /* PAGINA 5 - TRABAJA CON NOSOTROS */
+    /* Puestos de trabajo */
+    #careers>div:nth-child(1) h2{
+        font-size: 2rem;
+    }
+    
+    #careers>div:nth-child(1) p{
         font-size: 1rem;
     }
 }

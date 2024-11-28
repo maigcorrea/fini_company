@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Empleo</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -40,7 +40,7 @@
             </div>
             <div>
                 <div>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="" placeholder="&#128270; Buscar puesto">
                 </div>
                 <div class="positions">
                     <!-- insertar dinámicamente los puestos de trabajo -->
@@ -55,15 +55,14 @@
                     <h3>¿En qué te podemos ayudar?</h3>
                     <p>En nuestro afán por ofrecerte el mejor servicio posible, valoramos tus opiniones, sugerencias y
                         preguntas. Si tienes alguna duda, sugerencia, o simplemente deseas compartir tus comentarios con
-                        nosotros, no dudes en utilizar nuestro formulario de contacto. Estamos aquí para escucharte y
-                        responder a tus inquietudes lo antes posible. Tu opinión es fundamental para nosotros, y nos
-                        esforzamos por garantizar tu satisfacción en cada interacción.</p>
+                        nosotros, no dudes en ponerte en contacto con nosotros. También estaremos encantados de acogerte si deseas hacer una candidatura espontánea, simplemente cuentanos un poco acerca de tí y nos pondremos en contacto para que puedas hacernos llegar tu currículum.  Estamos aquí para escucharte y
+                        responder a tus inquietudes lo antes posible. Tu opinión es fundamental para nosotros.</p>
                 </div>
 
                 <div class="form-container">
                     <form action="#" method="post" enctype="multipart/form-data">
                         <label for="nombre">Nombre y Apellidos*</label>
-                        <input type="text" name="nombre" placeholder="Sonia Castillo" required>
+                        <input type="text" name="nombre" placeholder="Nombre Apellido Apellido" required>
 
                         <label for="mail">Email*</label>
                         <input type="email" name="mail" placeholder="example@gmail.com" required>
@@ -77,48 +76,42 @@
                 </div>
             </div>
         </section>
+        <footer>
+            <div class="footer-container">
+                <div>
+                    <ul>
+                        <li><a href="">Conocenos</a></li>
+                        <li><a href="">Historia</a></li>
+                        <li><a href="">Memoria</a></li>
+                        <li><a href="">Ética</a></li>
+                        <li><a href="">Sustentabilidad</a></li>
+                        <li><a href="">Sostenibilidad</a></li>
+                    </ul>
+                </div> 
+                <div>
+                    <ul>
+                        <li><a href="">News</a></li>
+                        <li><a href="">Hable con nosotros</a></li>
+                        <li><a href="">Aviso legal</a></li>
+                        <li><a href="">Aviso de cookies</a></li>
+                        <li><a href="">Aviso de privacidad</a></li>
+                        <li><a href="">Salud y seguridad</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Suscríbete a la newsletter</h3>
+                    <input type="email" name="user" id="" placeholder="userexample@gmail.com">
+                    <a href="#">Suscribirse</a>
+                </div>
+            </div>
+        <div class="rights">
+            <hr>
+            <p>© 2024 Company, Inc. All rights reserved</p>
+        </div>
+        </footer>
         
     </main>
     <script src="./JS/dataPositions.js"></script>
-    <script>
-        //CONST Y VAR
-        const careersContainer=document.querySelector(".positions");
-
-        positions.forEach(position => {
-            const positionContainer=document.createElement("div");
-            positionContainer.classList.add("position");
-
-            positionContainer.innerHTML=`
-                <div>
-                    <img src="./img/logo_fini_company_250x250_fondo_azul_1669968602.jpg" alt="">
-                </div>
-                <div>
-                    <p>${position.title}</p>
-                    <p>${position.location}</p>
-                    <p><span>Modalidad:</span>  ${position.type}</p>
-                </div>
-            `;
-
-            careersContainer.append(positionContainer);
-        });
-
-        //Funcionalidad del buscador
-            const searcherPos=document.querySelector("#careers input");
-
-            document.addEventListener("DOMContentLoaded",()=>{
-                const allPositions=document.querySelectorAll(".position");
-                searcherPos.addEventListener("input",(e)=>{
-                    let value=e.target.value.toLowerCase().trim();
-                    allPositions.forEach(position => {
-                        if(position.textContent.toLowerCase().includes(value)){
-                            position.style.display="flex";
-                        }else{
-                            position.style.display="none";
-                        }
-                    });
-                })
-
-            })
-    </script>
+    <script src="./JS/buscadorPuestos.js"></script>
 </body>
 </html>
