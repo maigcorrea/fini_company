@@ -22,27 +22,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     seccion.append(divProductos);
 
     const prods=document.querySelectorAll(".product");
-    //  const h3=document.querySelectorAll(".product h3");
-    // console.log(h3);
-    // const p=document.querySelectorAll(".product p");
-    // prod.forEach(pr=>{
-    //     pr.addEventListener("mouseover",(e)=>{
-    //         const h3=document.querySelector(".product h3");
-    //         h3.forEach(h=>{
-    //             h.style.visibility="visible";
+    
 
-    //         })
-    //     })
-
-    //     pr.addEventListener("mouseleave",()=>{
-    //         h3.forEach(h=>{
-    //             h.style.visibility="hidden";
-
-    //         })
-    //     })
-    // })
-
-    prods.forEach((prod,index)=>{
+    prods.forEach((prod)=>{
         const h3=prod.querySelector("h3");
         const p=prod.querySelector("p");
         prod.addEventListener("mouseover",()=>{
