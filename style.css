@@ -306,11 +306,6 @@ nav input[type="search"]{
     padding: 20px;
 }
 
-#noticias article{
-    height: 20%;
-    background-color: #00D695;
-}
-
 #noticias article img{
     width: 600px;
     height: 400px;
@@ -1245,7 +1240,7 @@ footer .rights p{
     line-height: 30px;
 }
 
-.position div:nth-child(2) a:nth-child(1) , span{
+.position div:nth-child(2) a:nth-child(1) , .position span{
     font-weight: bold;
 }
 
