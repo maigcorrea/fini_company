@@ -57,29 +57,44 @@
 
 //CAMBIAR EL BOTON DE COMPROMISO FINI POR "COMPROMISO" Y TRABAJA CON NOSOTROS POR "TRABAJOS"
 
-//Selecciona el primer enlace dentro del div con id "contenedor"
-const btnPedido = document.querySelectorAll(".btn-Comp");
-const btnTrabajos=document.querySelector(".btn-trab");
+// //Selecciona el primer enlace dentro del div con id "contenedor"
+// const btnPedido = document.querySelectorAll(".btn-Comp");
+// const btnTrabajos=document.querySelector(".btn-trab");
 
-// Crea una función que verifica el ancho de la pantalla
-function cambiarTextoPedido() {
-  if (window.matchMedia("(min-width: 767px)").matches) {
-    btnPedido.forEach(e=>{
-      e.style.display="block";
-    })
-  } else {
-    btnPedido.forEach(e=>{
-      e.style.display="none";
-    })
+// // Crea una función que verifica el ancho de la pantalla
+// function cambiarTextoPedido() {
+//   if (window.matchMedia("(min-width: 767px)").matches) {
+//     btnPedido.forEach(e=>{
+//       e.style.display="block";
+//     })
+//   } else {
+//     btnPedido.forEach(e=>{
+//       e.style.display="none";
+//     })
+//   }
+// }
+
+// // Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
+// window.addEventListener("load", cambiarTextoPedido);
+// window.addEventListener("resize", cambiarTextoPedido);
+
+// //BUSCADOR PRINCIPAL
+// const buscador=document.querySelector("nav div:nth-child(3) input");
+
+
+const menuIcono=document.querySelector(".menuIcono p");
+const header=document.querySelector("header");
+
+menuIcono.addEventListener("click",()=>{
+  if(menuIcono.textContent=="☰"){
+    menuIcono.textContent="X";
+
+  }else{
+    menuIcono.textContent="☰";
   }
-}
-
-// Ejecuta la función al cargar la página y cada vez que la pantalla cambia de tamaño
-window.addEventListener("load", cambiarTextoPedido);
-window.addEventListener("resize", cambiarTextoPedido);
-
-//BUSCADOR PRINCIPAL
-const buscador=document.querySelector("nav div:nth-child(3) input");
-
+  
+  header.classList.toggle("desplegarMenu");
+  document.body.classList.toggle("ocultarOverflow");
+})
 
 

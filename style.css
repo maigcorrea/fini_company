@@ -119,6 +119,16 @@ nav input[type="search"]{
     padding: 15px;
 }
 
+.menuIcono{
+    display: none;
+    position: absolute;
+    width: 100%;
+    text-align: end;
+}
+
+.menuIcono img{
+    width: 50px;
+}
 
 /* BANNER */
 
@@ -1781,15 +1791,48 @@ form{
     /* PAGINA INICIAL */
 
     /* Barra navegación */
+    .menuIcono{
+        display: block;  
+        font-size: 3rem;      
+    }
+
+    .menuIcono p{
+        padding: 0 20px;
+    }
+
+    header,nav{
+        height: 100vh;
+    }
+    
+    header{
+        top: -100%;
+    }
+
+    .desplegarMenu{
+        top:0%;
+        overflow: hidden;
+    }
+
+    .ocultarOverflow{
+        overflow: hidden;
+    }
+
+    nav{
+        background-color: var(--violetaClaro);
+    }
+
+    nav, nav div, nav ul{
+        flex-direction: column;
+    }
+    
     nav div {
         display: flex;
-        /* width: 9%; */
         font-size: 0.9rem;
     }
 
     nav>div img{
-        width: 60px;
-        height: 40px;
+        width: 100%;
+        height: auto;
     }
 
     nav div:nth-child(1){
@@ -1797,11 +1840,15 @@ form{
     }
 
     nav div:nth-child(2) {
-        width: 51%;
+        width: 100%;
+        text-align: center;
+        font-size: 2rem;
+        line-height: 90px;
     }
 
     nav div:nth-child(3) {
-        width: 32%;
+        width: 100%;
+        font-size: 1.5rem;
     }
 
     
