@@ -78,11 +78,13 @@ nav div:nth-child(2) ul{
 nav a{
     text-decoration: none;
     color:black;
+    position: relative;
     /* width: fit-content;
     display: block; */
 }
-/* 
-nav>div:nth-child(2) li::after{
+
+
+nav>div:nth-child(2)  ul a::after{
     content: "";
     position: absolute;
     left: 0;
@@ -93,9 +95,9 @@ nav>div:nth-child(2) li::after{
     transition: width 0.5s ease;
 }
 
-nav>div:nth-child(2) li:hover::after {
-    width: fit-content; /* La línea se extiende en hover 
-} */
+nav>div:nth-child(2) ul a:hover::after {
+    width: 100%;  /*La línea se extiende en hover */
+} 
 
 nav div:nth-child(3){
     gap: 20px;
@@ -295,10 +297,10 @@ nav input[type="search"]{
 }
 
 /* NOTICIAS */
-#noticias{
+/* #noticias{
     display: flex;
     overflow-x: hidden;
-}
+} */
 
 #noticias .articulos{
     display: flex;
@@ -306,9 +308,13 @@ nav input[type="search"]{
     padding: 20px;
 }
 
+.articulos article{
+    width: 33%;
+}
+
 #noticias article img{
-    width: 600px;
-    height: 400px;
+    width: 100%;
+    height: 80%;
 }
 
 #noticias article a:nth-child(1){
@@ -1603,6 +1609,18 @@ form{
         min-height: 100%;
     }
 
+    /* Noticias */
+
+    #noticias .articulos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .articulos article{
+        width: 80%;
+        margin: auto;
+    }
+
     /* PAGINA 2 - CONOCENOS */
     /* faqs */
 
@@ -1792,12 +1810,15 @@ form{
     /* Barra navegación */
     .menuIcono{
         display: block;  
+        position: fixed;
         font-size: 3rem;      
     }
 
     .menuIcono p{
+        font-size: 2rem;
         padding: 0 20px;
         cursor: pointer;
+        width: fit-content;
     }
 
     header,nav{
@@ -1852,8 +1873,6 @@ form{
         font-size: 1.5rem;
     }
 
-    
-
     /* nav div:nth-child(3){
         width: fit-content;
     } */
@@ -1862,6 +1881,28 @@ form{
         padding: 15px 0px;
     }
 
+    nav ul a{
+        position: relative;
+    }
+
+    nav ul a::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px; 
+        background-color: black; 
+        transition: width 0.5s ease;
+    }
+    
+    nav ul a:hover::after {
+        width: 100%; /* La línea se extiende en hover */
+    } 
+
+    li:last-child a{
+        margin-left: 9px;
+    }
 
     /* Productos estrella */
 
@@ -1905,6 +1946,8 @@ form{
     #moreFini img{
        display: none;
     }
+
+    
 
     /* PAGINA 2 - CONOCENOS */
     #brand-journey h2, #team-members h2, #projects-preview h2{
@@ -1969,5 +2012,3 @@ form{
         font-size: 1rem;
     }
 }
-
-
