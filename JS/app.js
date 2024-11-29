@@ -64,8 +64,6 @@ const btnTrabajos=document.querySelector(".btn-trab");
 // Crea una función que verifica el ancho de la pantalla
 function cambiarTextoPedido() {
   if (window.matchMedia("(min-width: 767px)").matches) {
-    // btnPedido.textContent = "Compromiso Fini";
-    // btnTrabajos.textContent="Trabaja con nosotros";
     btnPedido.forEach(e=>{
       e.style.display="block";
     })
@@ -73,7 +71,6 @@ function cambiarTextoPedido() {
     btnPedido.forEach(e=>{
       e.style.display="none";
     })
-    // btnTrabajos.textContent="Trabajos";
   }
 }
 

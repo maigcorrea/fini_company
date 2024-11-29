@@ -78,8 +78,10 @@ nav div:nth-child(2) ul{
 nav a{
     text-decoration: none;
     color:black;
+    /* width: fit-content;
+    display: block; */
 }
-
+/* 
 nav>div:nth-child(2) li::after{
     content: "";
     position: absolute;
@@ -87,13 +89,13 @@ nav>div:nth-child(2) li::after{
     bottom: 0;
     width: 0;
     height: 2px; 
-    background-color: #ffffff; 
+    background-color: black; 
     transition: width 0.5s ease;
 }
 
 nav>div:nth-child(2) li:hover::after {
-    width: fit-content; /* La línea se extiende en hover */
-}
+    width: fit-content; /* La línea se extiende en hover 
+} */
 
 nav div:nth-child(3){
     gap: 20px;
@@ -1311,9 +1313,7 @@ form{
 
 /* RESPONSIVE */
 @media screen and (max-width:1400px){
-    body{
-        background-color: yellow;
-    }
+    
     /* PAGINA INICIAL */
 
     /* Barra navegación */
@@ -1513,9 +1513,7 @@ form{
 }
 
 @media screen and (max-width:992px){
-    body{
-        background-color: red;
-    }
+    
 
     /* PAGINA INICIAL */
 
@@ -1779,9 +1777,7 @@ form{
 
 
 @media screen and (max-width:768px) {
-    body{
-        background-color: green;
-    }
+    
     /* PAGINA INICIAL */
 
     /* Barra navegación */
