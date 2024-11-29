@@ -4,7 +4,7 @@
             "id": 1,
             "image":"./img/p1_Chocogang-marsh.png",
             "nombre":"ChocoGang Marshmallow",
-            "gramos":"35g"
+            "gramos":"35g",
         },
         {
             "id": 2,

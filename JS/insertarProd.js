@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         prod.innerHTML=`
             <div class="imgContainer">
-                <img src=${producto.image} class="prImage">
+                <a href="#"><img src=${producto.image} class="prImage"></a>
             </div>
             <h3 class="prName">${producto.nombre}</h3>
             <p class="prDesc">${producto.gramos}</p>
@@ -21,26 +21,45 @@ document.addEventListener("DOMContentLoaded",()=>{
     });
     seccion.append(divProductos);
 
-    const prod=document.querySelectorAll(".product");
-    // const h3=document.querySelectorAll(".product h3");
-    console.log(h3);
-    const p=document.querySelectorAll(".product p");
-    prod.forEach(pr=>{
-        pr.addEventListener("mouseover",(e)=>{
-            const h3=document.querySelector(".product h3");
-            h3.forEach(h=>{
-                h.style.visibility="visible";
+    const prods=document.querySelectorAll(".product");
+    //  const h3=document.querySelectorAll(".product h3");
+    // console.log(h3);
+    // const p=document.querySelectorAll(".product p");
+    // prod.forEach(pr=>{
+    //     pr.addEventListener("mouseover",(e)=>{
+    //         const h3=document.querySelector(".product h3");
+    //         h3.forEach(h=>{
+    //             h.style.visibility="visible";
 
-            })
+    //         })
+    //     })
+
+    //     pr.addEventListener("mouseleave",()=>{
+    //         h3.forEach(h=>{
+    //             h.style.visibility="hidden";
+
+    //         })
+    //     })
+    // })
+
+    prods.forEach((prod,index)=>{
+        const h3=prod.querySelector("h3");
+        const p=prod.querySelector("p");
+        prod.addEventListener("mouseover",()=>{
+            h3.style.opacity="1";
+            p.style.opacity="1";
+            h3.style.transition="opacity 0.7s linear";
+            p.style.transition="opacity 0.7s linear";
+            
         })
 
-        pr.addEventListener("mouseleave",()=>{
-            h3.forEach(h=>{
-                h.style.visibility="hidden";
-
-            })
+        prod.addEventListener("mouseleave",()=>{
+            h3.style.opacity="0";
+            p.style.opacity="0";
+            
         })
     })
+
 
 
 })

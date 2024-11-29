@@ -484,6 +484,7 @@ nav input[type="search"]{
     overflow: hidden;
     position: relative; /* Para controlar la posición de los elementos internos */
     width: 100%; /* Asegúrate de que abarque todo el ancho */
+    height: 60vh;
 }
 
 .team-container{
@@ -627,6 +628,12 @@ nav input[type="search"]{
     border-radius: 15px;
     text-align: center;
     font-size: 1.1rem;
+}
+
+#projects-preview>div div:nth-child(2)>div a:hover{
+    background-color: black;
+    border:solid 1px whitesmoke;
+    color: white;
 }
 
 #projects-preview>div div:nth-child(2) ul{
@@ -1058,6 +1065,11 @@ footer .rights p{
     padding: 40px;
 }
 
+.product h3, .product p{
+    opacity: 0;
+    font-size: 3rem;
+}
+
 .imgContainer{
     width: 100%;
     text-align: center;
@@ -1475,6 +1487,10 @@ form{
     }
     
     /* CUARTA PÁGINA - PRODUCTOS */
+    .product h3, .product p{
+        font-size: 2rem;
+    }
+    
     /* Join us */
     #join-us a {
         padding: 20px;
@@ -1667,6 +1683,7 @@ form{
     #brand-journey h2, #team-members h2, #projects-preview h2{
         font-size: 2.5rem;
         padding: 0 40px;
+        padding-bottom: 5%;
     }
 
 
@@ -1719,6 +1736,10 @@ form{
     #banner-prod h1 {
         font-size: 5rem;
     }
+
+    .product h3, .product p{
+        font-size: 1.5rem;
+    }    
 
     #join-us h3{
         width: 75%;
@@ -1975,6 +1996,10 @@ form{
 
     #banner-prod h1 {
         font-size: 4rem;
+    }
+
+    .product h3, .product p{
+        font-size: 1rem;
     }
 
     #join-us h3{
